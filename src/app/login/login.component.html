@@ -3,7 +3,7 @@
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email</mat-label>
       <input
-        type="email"
+        type="text"
         matInput
 fornmControlName="email"
 name="email"
@@ -11,17 +11,6 @@ name="email"
       />
     </mat-form-field>
 
-    <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Password</mat-label>
-    <input
-      type="password"
-      matInput
-fornmControlName="pwd"
-name="pwd"
-      placeholder="Your Password"
-    />
-  </mat-form-field>
-  <button mat-raised-button color="primary"[disabled]="!loginForm.valid" >Primary</button>
-
+<button class="btn" [disabled]="loginForm.invalid">asdf</button>
   </form>
 </mat-card>

@@ -13,9 +13,7 @@ loginForm:FormGroup;
 
   ngOnInit() {
     this.loginForm = this.fb.group({
-      email:['',[Validators
-    .required]],
-    pwd:['',[Validators.required]]
+      email:['',[Validators.required]]
     })
   }
 
