@@ -1,3 +1,27 @@
-<p>
-login works!
-</p>
+<mat-card class="example-card">
+  <form class="example-form" [formGroup]="loginForm">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+fornmControlName="email"
+name="email"
+        placeholder="Ex. pat@example.com"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Password</mat-label>
+    <input
+      type="password"
+      matInput
+fornmControlName="pwd"
+name="pwd"
+      placeholder="Your Password"
+    />
+  </mat-form-field>
+  <button mat-raised-button color="primary"[disabled]="!loginForm.valid" >Primary</button>
+
+  </form>
+</mat-card>

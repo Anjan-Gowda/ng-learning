@@ -12,7 +12,9 @@ import {
   MatToolbarModule,
   MatTabsModule,
   MatListModule,
-  MatIconModule 
+  MatIconModule ,
+  MatInputModule,
+  MatCardModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -42,7 +44,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   MatTabsModule,
   MatListModule,
   MatIconModule ,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+  MatInputModule,
+  MatCardModule
    ],
 
   declarations: [ 
