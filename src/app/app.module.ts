@@ -12,9 +12,9 @@ import {
   MatToolbarModule,
   MatTabsModule,
   MatListModule,
-  MatIconModule ,
+  MatIconModule,
   MatInputModule,
-  MatCardModule
+  MatCardModule,
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -30,37 +30,36 @@ import { AuthGuard } from './services/auth.guard';
 import { AuthService } from './services/auth.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
-  imports:      [ 
-  BrowserModule,
-  BrowserAnimationsModule,
-  FormsModule, 
-  AppRoutingModule,
-  MatButtonModule,
-  MatBadgeModule,
-  MatSidenavModule,
-  MatToolbarModule,
-  MatTabsModule,
-  MatListModule,
-  MatIconModule ,
-  ReactiveFormsModule,
-  MatInputModule,
-  MatCardModule
-   ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    AppRoutingModule,
+    MatButtonModule,
+    MatBadgeModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatListModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatCardModule,
+  ],
 
-  declarations: [ 
-  AppComponent, 
-  HelloComponent,
-  SignupComponent,
-  OffersComponent,
-  HomeComponent,
-  LoginComponent,
-  ToolbarComponent,
-  SidenavListComponent,
-  AccomodationComponent
-   ],
-  bootstrap: [ AppComponent ],
-  providers:[AuthGuard,AuthService]
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    SignupComponent,
+    OffersComponent,
+    HomeComponent,
+    LoginComponent,
+    ToolbarComponent,
+    SidenavListComponent,
+    AccomodationComponent,
+  ],
+  bootstrap: [AppComponent],
+  providers: [AuthGuard, AuthService],
 })
-export class AppModule { }
+export class AppModule {}

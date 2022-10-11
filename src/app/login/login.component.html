@@ -5,12 +5,12 @@
       <input
         type="text"
         matInput
-fornmControlName="email"
-name="email"
+        formControlName="email"
+        name="email"
         placeholder="Ex. pat@example.com"
       />
     </mat-form-field>
 
-<button class="btn" [disabled]="loginForm.invalid">asdf</button>
+    <button class="btn" [disabled]="!loginForm.valid">asdf</button>
   </form>
 </mat-card>
