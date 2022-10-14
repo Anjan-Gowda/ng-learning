@@ -1,5 +1,5 @@
 <mat-card class="example-card">
-  <form class="example-form" [formGroup]="loginForm">
+  <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login()">
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email</mat-label>
       <input
